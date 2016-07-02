@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -8,14 +8,19 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="net.emptyzen.apps.mystars.MainActivity"
-    android:id="@+id/content">
+    android:id="@+id/date">
 
-    <CheckBox
+    <CalendarView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="oneStar"/>
-    <CheckBox
+        android:id="@+id/calendar"
+        android:onClick="sendDate"/>
+
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="twoStar"/>
-</LinearLayout>
+        android:layout_alignParentBottom="true"
+        android:onClick="sendDate"
+        android:text="@string/select_date"/>
+
+</RelativeLayout>

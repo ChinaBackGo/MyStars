@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">MyStars</string>
+    <string name="one_star">Nice job 1 star!</string>
+    <string name="two_star">Nice job 2 stars!</string>
+    <string name="select_date">Select Date</string>
+    <string name="back_button">Back</string>
 </resources>
